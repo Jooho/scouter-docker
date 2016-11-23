@@ -1,0 +1,36 @@
+20161117 16:17:36 Scouter Server Version 0.4.22 20161117
+  ____                  _            
+ / ___|  ___ ___  _   _| |_ ___ _ __ 
+ \___ \ / __/   \| | | | __/ _ \ '__|
+  ___) | (_| (+) | |_| | ||  __/ |   
+ |____/ \___\___/ \__,_|\__\___|_|                                      
+ Open Source S/W Performance Monitoring  
+ Scouter version 0.4.22 20161117
+ 
+20161117 16:17:36 Load Account Group File
+20161117 16:17:36 Load Account File
+20161117 16:17:36 Load Account Group File
+20161117 16:17:36 udp listen 0.0.0.0:6100
+20161117 16:17:36 	udp_host=0.0.0.0
+20161117 16:17:36 	udp_port=6100
+20161117 16:17:36 	udp_buffer=65535
+20161117 16:17:36 	udp_so_rcvbuf=4194304
+20161117 16:17:36 Load Account File
+20161117 16:17:36 	tcp_port=6100
+20161117 16:17:36 	cp_agent_so_timeout=60000
+20161117 16:17:36 	cp_client_so_timeout=8000
+20161117 16:17:38 [S104] New OBJECT  objType=osx objHash=x1j4khfh objName=/GunMac.local addr=127.0.0.1 0.4.22 20161117 alive 2016-11-17 16:17:38.194
+20161117 16:17:41 PLUG-IN : scouter.server.plugin.IAlert loaded #xg9ud66
+20161117 16:17:41 PLUG-IN : scouter.server.plugin.ICounter loaded #x1biec77
+20161117 16:17:41 PLUG-IN : scouter.server.plugin.IObject loaded #xc1crsh
+20161117 16:17:41 PLUG-IN : scouter.server.plugin.IXLog loaded #x161jl6v
+20161117 16:17:41 PLUG-IN : scouter.server.plugin.IXLog loaded #xiq4453
+20161117 16:17:41 PLUG-IN : scouter.server.plugin.IXLogProfile loaded #x11k3u66
+20161117 16:17:41 PLUG-IN : scouter.server.plugin.ISummary loaded #x1701on
+20161117 16:18:52 [S104] New OBJECT  objType=tomcat objHash=x16ssn4j objName=/GunMac.local/myTomcat1 addr=127.0.0.1 0.4.22 20161117 alive 2016-11-17 16:18:52.295
+20161117 16:19:04 [S104] New OBJECT  objType=reqproc objHash=zqhea8e objName=/GunMac.local/myTomcat1/ajp-bio-8009 addr=127.0.0.1 alive 2016-11-17 16:19:04.758
+20161117 16:19:04 [S104] New OBJECT  objType=reqproc objHash=xo8789m objName=/GunMac.local/myTomcat1/http-bio-8080 addr=127.0.0.1 alive 2016-11-17 16:19:04.76
+20161117 16:20:18 [S145] GeoIP db file is not readable : /Users/gunlee/Documents/workspace/scouter/scouter-demo/demo-env1/scouter/server/conf/GeoLiteCity.dat
+20161117 16:21:49 [S178] Server Shutdown
+20161117 16:21:49 [S179] Shutdown scouter.server.db.DBCtr$$anon$1@145eaa29 ...
+20161117 16:21:49 [S179] Shutdown scouter.server.core.CoreRun$$anon$1@15bb6bea ...

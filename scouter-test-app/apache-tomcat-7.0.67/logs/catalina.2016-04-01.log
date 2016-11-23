@@ -1,0 +1,254 @@
+4월 01, 2016 5:13:46 오후 org.apache.catalina.startup.Catalina initDirs
+심각: Cannot find specified temporary folder at /Users/gunlee/Documents/workspace/scouter/scouter-demo/demo-env1/apache-tomcat-7.0.67/temp
+4월 01, 2016 5:13:46 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: Server version:        Apache Tomcat/7.0.67
+4월 01, 2016 5:13:46 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: Server built:          Dec 7 2015 13:07:11 UTC
+4월 01, 2016 5:13:46 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: Server number:         7.0.67.0
+4월 01, 2016 5:13:46 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: OS Name:               Mac OS X
+4월 01, 2016 5:13:46 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: OS Version:            10.11.3
+4월 01, 2016 5:13:46 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: Architecture:          x86_64
+4월 01, 2016 5:13:46 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: Java Home:             /Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre
+4월 01, 2016 5:13:46 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: JVM Version:           1.8.0_25-b17
+4월 01, 2016 5:13:46 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: JVM Vendor:            Oracle Corporation
+4월 01, 2016 5:13:46 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: CATALINA_BASE:         /Users/gunlee/Documents/workspace/scouter/scouter-demo/demo-env1/apache-tomcat-7.0.67
+4월 01, 2016 5:13:46 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: CATALINA_HOME:         /Users/gunlee/Documents/workspace/scouter/scouter-demo/demo-env1/apache-tomcat-7.0.67
+4월 01, 2016 5:13:46 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: Command line argument: -Djava.util.logging.config.file=/Users/gunlee/Documents/workspace/scouter/scouter-demo/demo-env1/apache-tomcat-7.0.67/conf/logging.properties
+4월 01, 2016 5:13:46 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+4월 01, 2016 5:13:46 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: Command line argument: -javaagent:/Users/gunlee/Documents/workspace/scouter/scouter-demo/demo-env1/apache-tomcat-7.0.67/../scouter/agent.java/scouter.agent.jar
+4월 01, 2016 5:13:46 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: Command line argument: -Dscouter.config=/Users/gunlee/Documents/workspace/scouter/scouter-demo/demo-env1/apache-tomcat-7.0.67/../conf/myTomcat1.conf
+4월 01, 2016 5:13:46 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: Command line argument: -Djava.endorsed.dirs=/Users/gunlee/Documents/workspace/scouter/scouter-demo/demo-env1/apache-tomcat-7.0.67/endorsed
+4월 01, 2016 5:13:46 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: Command line argument: -Dcatalina.base=/Users/gunlee/Documents/workspace/scouter/scouter-demo/demo-env1/apache-tomcat-7.0.67
+4월 01, 2016 5:13:46 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: Command line argument: -Dcatalina.home=/Users/gunlee/Documents/workspace/scouter/scouter-demo/demo-env1/apache-tomcat-7.0.67
+4월 01, 2016 5:13:46 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: Command line argument: -Djava.io.tmpdir=/Users/gunlee/Documents/workspace/scouter/scouter-demo/demo-env1/apache-tomcat-7.0.67/temp
+4월 01, 2016 5:13:46 오후 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+정보: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/gunlee/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+4월 01, 2016 5:13:46 오후 org.apache.coyote.AbstractProtocol init
+정보: Initializing ProtocolHandler ["http-bio-8080"]
+4월 01, 2016 5:13:46 오후 org.apache.coyote.AbstractProtocol init
+정보: Initializing ProtocolHandler ["ajp-bio-8009"]
+4월 01, 2016 5:13:46 오후 org.apache.catalina.startup.Catalina load
+정보: Initialization processed in 720 ms
+4월 01, 2016 5:13:46 오후 org.apache.catalina.core.StandardService startInternal
+정보: Starting service Catalina
+4월 01, 2016 5:13:46 오후 org.apache.catalina.core.StandardEngine startInternal
+정보: Starting Servlet Engine: Apache Tomcat/7.0.67
+4월 01, 2016 5:13:46 오후 org.apache.catalina.startup.HostConfig deployDirectory
+정보: Deploying web application directory /Users/gunlee/Documents/workspace/scouter/scouter-demo/demo-env1/apache-tomcat-7.0.67/webapps/jpetstore
+4월 01, 2016 5:13:48 오후 org.apache.catalina.startup.TldConfig execute
+정보: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+4월 01, 2016 5:13:51 오후 org.apache.catalina.startup.HostConfig deployDirectory
+정보: Deployment of web application directory /Users/gunlee/Documents/workspace/scouter/scouter-demo/demo-env1/apache-tomcat-7.0.67/webapps/jpetstore has finished in 4,246 ms
+4월 01, 2016 5:13:51 오후 org.apache.coyote.AbstractProtocol start
+정보: Starting ProtocolHandler ["http-bio-8080"]
+4월 01, 2016 5:13:51 오후 org.apache.coyote.AbstractProtocol start
+정보: Starting ProtocolHandler ["ajp-bio-8009"]
+4월 01, 2016 5:13:51 오후 org.apache.catalina.startup.Catalina start
+정보: Server startup in 4317 ms
+4월 01, 2016 5:14:08 오후 org.apache.jasper.compiler.TldLocationsCache tldScanJar
+정보: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+4월 01, 2016 5:22:41 오후 org.apache.catalina.core.StandardServer await
+정보: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+4월 01, 2016 5:22:41 오후 org.apache.coyote.AbstractProtocol pause
+정보: Pausing ProtocolHandler ["http-bio-8080"]
+4월 01, 2016 5:22:41 오후 org.apache.coyote.AbstractProtocol pause
+정보: Pausing ProtocolHandler ["ajp-bio-8009"]
+4월 01, 2016 5:22:41 오후 org.apache.catalina.core.StandardService stopInternal
+정보: Stopping service Catalina
+4월 01, 2016 5:22:41 오후 org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+심각: The web application [/jpetstore] registered the JDBC driver [org.hsqldb.jdbc.JDBCDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+4월 01, 2016 5:22:41 오후 org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+심각: The web application [/jpetstore] appears to have started a thread named [HSQLDB Timer @5ea9498] but has failed to stop it. This is very likely to create a memory leak.
+4월 01, 2016 5:22:41 오후 org.apache.coyote.AbstractProtocol stop
+정보: Stopping ProtocolHandler ["http-bio-8080"]
+4월 01, 2016 5:22:41 오후 org.apache.coyote.AbstractProtocol stop
+정보: Stopping ProtocolHandler ["ajp-bio-8009"]
+4월 01, 2016 5:22:41 오후 org.apache.coyote.AbstractProtocol destroy
+정보: Destroying ProtocolHandler ["http-bio-8080"]
+4월 01, 2016 5:22:41 오후 org.apache.coyote.AbstractProtocol destroy
+정보: Destroying ProtocolHandler ["ajp-bio-8009"]
+4월 01, 2016 5:42:07 오후 org.apache.catalina.startup.Catalina initDirs
+심각: Cannot find specified temporary folder at /Users/gunlee/Documents/workspace/scouter/scouter-demo/demo-env1/apache-tomcat-7.0.67/temp
+4월 01, 2016 5:42:08 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: Server version:        Apache Tomcat/7.0.67
+4월 01, 2016 5:42:08 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: Server built:          Dec 7 2015 13:07:11 UTC
+4월 01, 2016 5:42:08 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: Server number:         7.0.67.0
+4월 01, 2016 5:42:08 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: OS Name:               Mac OS X
+4월 01, 2016 5:42:08 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: OS Version:            10.11.3
+4월 01, 2016 5:42:08 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: Architecture:          x86_64
+4월 01, 2016 5:42:08 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: Java Home:             /Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre
+4월 01, 2016 5:42:08 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: JVM Version:           1.8.0_25-b17
+4월 01, 2016 5:42:08 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: JVM Vendor:            Oracle Corporation
+4월 01, 2016 5:42:08 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: CATALINA_BASE:         /Users/gunlee/Documents/workspace/scouter/scouter-demo/demo-env1/apache-tomcat-7.0.67
+4월 01, 2016 5:42:08 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: CATALINA_HOME:         /Users/gunlee/Documents/workspace/scouter/scouter-demo/demo-env1/apache-tomcat-7.0.67
+4월 01, 2016 5:42:08 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: Command line argument: -Djava.util.logging.config.file=/Users/gunlee/Documents/workspace/scouter/scouter-demo/demo-env1/apache-tomcat-7.0.67/conf/logging.properties
+4월 01, 2016 5:42:08 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+4월 01, 2016 5:42:08 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: Command line argument: -javaagent:/Users/gunlee/Documents/workspace/scouter/scouter-demo/demo-env1/apache-tomcat-7.0.67/../scouter/agent.java/scouter.agent.jar
+4월 01, 2016 5:42:08 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: Command line argument: -Dscouter.config=/Users/gunlee/Documents/workspace/scouter/scouter-demo/demo-env1/apache-tomcat-7.0.67/../conf/myTomcat1.conf
+4월 01, 2016 5:42:08 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: Command line argument: -Djava.endorsed.dirs=/Users/gunlee/Documents/workspace/scouter/scouter-demo/demo-env1/apache-tomcat-7.0.67/endorsed
+4월 01, 2016 5:42:08 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: Command line argument: -Dcatalina.base=/Users/gunlee/Documents/workspace/scouter/scouter-demo/demo-env1/apache-tomcat-7.0.67
+4월 01, 2016 5:42:08 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: Command line argument: -Dcatalina.home=/Users/gunlee/Documents/workspace/scouter/scouter-demo/demo-env1/apache-tomcat-7.0.67
+4월 01, 2016 5:42:08 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: Command line argument: -Djava.io.tmpdir=/Users/gunlee/Documents/workspace/scouter/scouter-demo/demo-env1/apache-tomcat-7.0.67/temp
+4월 01, 2016 5:42:08 오후 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+정보: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/gunlee/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+4월 01, 2016 5:42:08 오후 org.apache.coyote.AbstractProtocol init
+정보: Initializing ProtocolHandler ["http-bio-8080"]
+4월 01, 2016 5:42:08 오후 org.apache.coyote.AbstractProtocol init
+정보: Initializing ProtocolHandler ["ajp-bio-8009"]
+4월 01, 2016 5:42:08 오후 org.apache.catalina.startup.Catalina load
+정보: Initialization processed in 683 ms
+4월 01, 2016 5:42:08 오후 org.apache.catalina.core.StandardService startInternal
+정보: Starting service Catalina
+4월 01, 2016 5:42:08 오후 org.apache.catalina.core.StandardEngine startInternal
+정보: Starting Servlet Engine: Apache Tomcat/7.0.67
+4월 01, 2016 5:42:08 오후 org.apache.catalina.startup.HostConfig deployDirectory
+정보: Deploying web application directory /Users/gunlee/Documents/workspace/scouter/scouter-demo/demo-env1/apache-tomcat-7.0.67/webapps/jpetstore
+4월 01, 2016 5:42:09 오후 org.apache.catalina.startup.TldConfig execute
+정보: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+4월 01, 2016 5:42:12 오후 org.apache.catalina.startup.HostConfig deployDirectory
+정보: Deployment of web application directory /Users/gunlee/Documents/workspace/scouter/scouter-demo/demo-env1/apache-tomcat-7.0.67/webapps/jpetstore has finished in 4,280 ms
+4월 01, 2016 5:42:12 오후 org.apache.coyote.AbstractProtocol start
+정보: Starting ProtocolHandler ["http-bio-8080"]
+4월 01, 2016 5:42:12 오후 org.apache.coyote.AbstractProtocol start
+정보: Starting ProtocolHandler ["ajp-bio-8009"]
+4월 01, 2016 5:42:12 오후 org.apache.catalina.startup.Catalina start
+정보: Server startup in 4350 ms
+4월 01, 2016 5:42:13 오후 org.apache.jasper.compiler.TldLocationsCache tldScanJar
+정보: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+4월 01, 2016 5:47:20 오후 org.apache.catalina.core.StandardServer await
+정보: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+4월 01, 2016 5:47:20 오후 org.apache.coyote.AbstractProtocol pause
+정보: Pausing ProtocolHandler ["http-bio-8080"]
+4월 01, 2016 5:47:20 오후 org.apache.coyote.AbstractProtocol pause
+정보: Pausing ProtocolHandler ["ajp-bio-8009"]
+4월 01, 2016 5:47:20 오후 org.apache.catalina.core.StandardService stopInternal
+정보: Stopping service Catalina
+4월 01, 2016 5:47:20 오후 org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+심각: The web application [/jpetstore] registered the JDBC driver [org.hsqldb.jdbc.JDBCDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+4월 01, 2016 5:47:20 오후 org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+심각: The web application [/jpetstore] appears to have started a thread named [HSQLDB Timer @54ea0993] but has failed to stop it. This is very likely to create a memory leak.
+4월 01, 2016 5:47:20 오후 org.apache.coyote.AbstractProtocol stop
+정보: Stopping ProtocolHandler ["http-bio-8080"]
+4월 01, 2016 5:47:20 오후 org.apache.coyote.AbstractProtocol stop
+정보: Stopping ProtocolHandler ["ajp-bio-8009"]
+4월 01, 2016 5:47:20 오후 org.apache.coyote.AbstractProtocol destroy
+정보: Destroying ProtocolHandler ["http-bio-8080"]
+4월 01, 2016 5:47:20 오후 org.apache.coyote.AbstractProtocol destroy
+정보: Destroying ProtocolHandler ["ajp-bio-8009"]
+4월 01, 2016 7:11:15 오후 org.apache.catalina.startup.Catalina initDirs
+심각: Cannot find specified temporary folder at /Users/gunlee/Documents/workspace/scouter/scouter-demo/demo-env1/apache-tomcat-7.0.67/temp
+4월 01, 2016 7:11:16 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: Server version:        Apache Tomcat/7.0.67
+4월 01, 2016 7:11:16 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: Server built:          Dec 7 2015 13:07:11 UTC
+4월 01, 2016 7:11:16 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: Server number:         7.0.67.0
+4월 01, 2016 7:11:16 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: OS Name:               Mac OS X
+4월 01, 2016 7:11:16 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: OS Version:            10.11.3
+4월 01, 2016 7:11:16 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: Architecture:          x86_64
+4월 01, 2016 7:11:16 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: Java Home:             /Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre
+4월 01, 2016 7:11:16 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: JVM Version:           1.8.0_25-b17
+4월 01, 2016 7:11:16 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: JVM Vendor:            Oracle Corporation
+4월 01, 2016 7:11:16 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: CATALINA_BASE:         /Users/gunlee/Documents/workspace/scouter/scouter-demo/demo-env1/apache-tomcat-7.0.67
+4월 01, 2016 7:11:16 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: CATALINA_HOME:         /Users/gunlee/Documents/workspace/scouter/scouter-demo/demo-env1/apache-tomcat-7.0.67
+4월 01, 2016 7:11:16 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: Command line argument: -Djava.util.logging.config.file=/Users/gunlee/Documents/workspace/scouter/scouter-demo/demo-env1/apache-tomcat-7.0.67/conf/logging.properties
+4월 01, 2016 7:11:16 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+4월 01, 2016 7:11:16 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: Command line argument: -javaagent:/Users/gunlee/Documents/workspace/scouter/scouter-demo/demo-env1/apache-tomcat-7.0.67/../scouter/agent.java/scouter.agent.jar
+4월 01, 2016 7:11:16 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: Command line argument: -Dscouter.config=/Users/gunlee/Documents/workspace/scouter/scouter-demo/demo-env1/apache-tomcat-7.0.67/../conf/myTomcat1.conf
+4월 01, 2016 7:11:16 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: Command line argument: -Djava.endorsed.dirs=/Users/gunlee/Documents/workspace/scouter/scouter-demo/demo-env1/apache-tomcat-7.0.67/endorsed
+4월 01, 2016 7:11:16 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: Command line argument: -Dcatalina.base=/Users/gunlee/Documents/workspace/scouter/scouter-demo/demo-env1/apache-tomcat-7.0.67
+4월 01, 2016 7:11:16 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: Command line argument: -Dcatalina.home=/Users/gunlee/Documents/workspace/scouter/scouter-demo/demo-env1/apache-tomcat-7.0.67
+4월 01, 2016 7:11:16 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: Command line argument: -Djava.io.tmpdir=/Users/gunlee/Documents/workspace/scouter/scouter-demo/demo-env1/apache-tomcat-7.0.67/temp
+4월 01, 2016 7:11:16 오후 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+정보: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/gunlee/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+4월 01, 2016 7:11:16 오후 org.apache.coyote.AbstractProtocol init
+정보: Initializing ProtocolHandler ["http-bio-8080"]
+4월 01, 2016 7:11:16 오후 org.apache.coyote.AbstractProtocol init
+정보: Initializing ProtocolHandler ["ajp-bio-8009"]
+4월 01, 2016 7:11:16 오후 org.apache.catalina.startup.Catalina load
+정보: Initialization processed in 702 ms
+4월 01, 2016 7:11:16 오후 org.apache.catalina.core.StandardService startInternal
+정보: Starting service Catalina
+4월 01, 2016 7:11:16 오후 org.apache.catalina.core.StandardEngine startInternal
+정보: Starting Servlet Engine: Apache Tomcat/7.0.67
+4월 01, 2016 7:11:16 오후 org.apache.catalina.startup.HostConfig deployDirectory
+정보: Deploying web application directory /Users/gunlee/Documents/workspace/scouter/scouter-demo/demo-env1/apache-tomcat-7.0.67/webapps/jpetstore
+4월 01, 2016 7:11:18 오후 org.apache.catalina.startup.TldConfig execute
+정보: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+4월 01, 2016 7:11:20 오후 org.apache.catalina.startup.HostConfig deployDirectory
+정보: Deployment of web application directory /Users/gunlee/Documents/workspace/scouter/scouter-demo/demo-env1/apache-tomcat-7.0.67/webapps/jpetstore has finished in 4,119 ms
+4월 01, 2016 7:11:20 오후 org.apache.coyote.AbstractProtocol start
+정보: Starting ProtocolHandler ["http-bio-8080"]
+4월 01, 2016 7:11:20 오후 org.apache.coyote.AbstractProtocol start
+정보: Starting ProtocolHandler ["ajp-bio-8009"]
+4월 01, 2016 7:11:20 오후 org.apache.catalina.startup.Catalina start
+정보: Server startup in 4196 ms
+4월 01, 2016 7:12:26 오후 org.apache.catalina.core.StandardServer await
+정보: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+4월 01, 2016 7:12:26 오후 org.apache.coyote.AbstractProtocol pause
+정보: Pausing ProtocolHandler ["http-bio-8080"]
+4월 01, 2016 7:12:26 오후 org.apache.coyote.AbstractProtocol pause
+정보: Pausing ProtocolHandler ["ajp-bio-8009"]
+4월 01, 2016 7:12:26 오후 org.apache.catalina.core.StandardService stopInternal
+정보: Stopping service Catalina
+4월 01, 2016 7:12:26 오후 org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+심각: The web application [/jpetstore] registered the JDBC driver [org.hsqldb.jdbc.JDBCDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+4월 01, 2016 7:12:26 오후 org.apache.coyote.AbstractProtocol stop
+정보: Stopping ProtocolHandler ["http-bio-8080"]
+4월 01, 2016 7:12:26 오후 org.apache.coyote.AbstractProtocol stop
+정보: Stopping ProtocolHandler ["ajp-bio-8009"]
+4월 01, 2016 7:12:26 오후 org.apache.coyote.AbstractProtocol destroy
+정보: Destroying ProtocolHandler ["http-bio-8080"]
+4월 01, 2016 7:12:26 오후 org.apache.coyote.AbstractProtocol destroy
+정보: Destroying ProtocolHandler ["ajp-bio-8009"]
