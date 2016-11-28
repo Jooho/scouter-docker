@@ -1,0 +1,249 @@
+20161122 13:32:01 [A113] Counter Collector Started (#5)
+20161122 13:32:01 Version 0.4.22 20161117
+20161122 13:32:02 [A10] host agent boot seed=x145m6ku7fl
+20161122 13:32:02 [A01] Scouter Host Agent Version 0.4.22 20161117
+20161122 13:32:02 [A119] Agent UDP local.port=0
+20161122 13:32:02 [A145] SigarException trying to stat file system device /run/user/42/gvfs
+org.hyperic.sigar.SigarPermissionDeniedException: Permission denied: /run/user/42/gvfs
+	org.hyperic.sigar.SigarProxyCache.invoke(SigarProxyCache.java:218)
+	com.sun.proxy.$Proxy2.getFileSystemUsage(Unknown Source)
+	scouter.agent.counter.task.HostNetDiskPerf.diskIO(HostNetDiskPerf.java:154)
+	scouter.agent.counter.task.HostNetDiskPerf.process(HostNetDiskPerf.java:81)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	scouter.agent.counter.CounterExecutingManager$Invocation.process(CounterExecutingManager.java:93)
+	scouter.agent.counter.CounterExecutingManager.run(CounterExecutingManager.java:58)
+20161122 13:32:03 [DISK] disk perf error
+org.hyperic.sigar.SigarPermissionDeniedException: Permission denied: /run/user/42/gvfs
+	org.hyperic.sigar.SigarProxyCache.invoke(SigarProxyCache.java:218)
+	com.sun.proxy.$Proxy2.getFileSystemUsage(Unknown Source)
+	scouter.agent.counter.task.HostPerf.disk(HostPerf.java:281)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	scouter.agent.counter.CounterExecutingManager$Invocation.process(CounterExecutingManager.java:93)
+	scouter.agent.counter.CounterExecutingManager.run(CounterExecutingManager.java:58)
+20161122 13:32:03 [INFO] Num of Cpu Cores : 4
+20161122 14:32:03 [DISK] disk perf error
+org.hyperic.sigar.SigarPermissionDeniedException: Permission denied: /run/user/42/gvfs
+	org.hyperic.sigar.SigarProxyCache.invoke(SigarProxyCache.java:218)
+	com.sun.proxy.$Proxy2.getFileSystemUsage(Unknown Source)
+	scouter.agent.counter.task.HostPerf.disk(HostPerf.java:281)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	scouter.agent.counter.CounterExecutingManager$Invocation.process(CounterExecutingManager.java:93)
+	scouter.agent.counter.CounterExecutingManager.run(CounterExecutingManager.java:58)
+20161122 15:32:04 [DISK] disk perf error
+org.hyperic.sigar.SigarPermissionDeniedException: Permission denied: /run/user/42/gvfs
+	org.hyperic.sigar.SigarProxyCache.invoke(SigarProxyCache.java:218)
+	com.sun.proxy.$Proxy2.getFileSystemUsage(Unknown Source)
+	scouter.agent.counter.task.HostPerf.disk(HostPerf.java:281)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	scouter.agent.counter.CounterExecutingManager$Invocation.process(CounterExecutingManager.java:93)
+	scouter.agent.counter.CounterExecutingManager.run(CounterExecutingManager.java:58)
+20161122 16:32:04 [DISK] disk perf error
+org.hyperic.sigar.SigarPermissionDeniedException: Permission denied: /run/user/42/gvfs
+	org.hyperic.sigar.SigarProxyCache.invoke(SigarProxyCache.java:218)
+	com.sun.proxy.$Proxy2.getFileSystemUsage(Unknown Source)
+	scouter.agent.counter.task.HostPerf.disk(HostPerf.java:281)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	scouter.agent.counter.CounterExecutingManager$Invocation.process(CounterExecutingManager.java:93)
+	scouter.agent.counter.CounterExecutingManager.run(CounterExecutingManager.java:58)
+20161122 17:32:05 [DISK] disk perf error
+org.hyperic.sigar.SigarPermissionDeniedException: Permission denied: /run/user/42/gvfs
+	org.hyperic.sigar.SigarProxyCache.invoke(SigarProxyCache.java:218)
+	com.sun.proxy.$Proxy2.getFileSystemUsage(Unknown Source)
+	scouter.agent.counter.task.HostPerf.disk(HostPerf.java:281)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	scouter.agent.counter.CounterExecutingManager$Invocation.process(CounterExecutingManager.java:93)
+	scouter.agent.counter.CounterExecutingManager.run(CounterExecutingManager.java:58)
+20161122 18:32:05 [DISK] disk perf error
+org.hyperic.sigar.SigarPermissionDeniedException: Permission denied: /run/user/42/gvfs
+	org.hyperic.sigar.SigarProxyCache.invoke(SigarProxyCache.java:218)
+	com.sun.proxy.$Proxy2.getFileSystemUsage(Unknown Source)
+	scouter.agent.counter.task.HostPerf.disk(HostPerf.java:281)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	scouter.agent.counter.CounterExecutingManager$Invocation.process(CounterExecutingManager.java:93)
+	scouter.agent.counter.CounterExecutingManager.run(CounterExecutingManager.java:58)
+20161122 19:32:06 [DISK] disk perf error
+org.hyperic.sigar.SigarPermissionDeniedException: Permission denied: /run/user/42/gvfs
+	org.hyperic.sigar.SigarProxyCache.invoke(SigarProxyCache.java:218)
+	com.sun.proxy.$Proxy2.getFileSystemUsage(Unknown Source)
+	scouter.agent.counter.task.HostPerf.disk(HostPerf.java:281)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	scouter.agent.counter.CounterExecutingManager$Invocation.process(CounterExecutingManager.java:93)
+	scouter.agent.counter.CounterExecutingManager.run(CounterExecutingManager.java:58)
+20161122 20:32:06 [DISK] disk perf error
+org.hyperic.sigar.SigarPermissionDeniedException: Permission denied: /run/user/42/gvfs
+	org.hyperic.sigar.SigarProxyCache.invoke(SigarProxyCache.java:218)
+	com.sun.proxy.$Proxy2.getFileSystemUsage(Unknown Source)
+	scouter.agent.counter.task.HostPerf.disk(HostPerf.java:281)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	scouter.agent.counter.CounterExecutingManager$Invocation.process(CounterExecutingManager.java:93)
+	scouter.agent.counter.CounterExecutingManager.run(CounterExecutingManager.java:58)
+20161122 21:32:07 [DISK] disk perf error
+org.hyperic.sigar.SigarPermissionDeniedException: Permission denied: /run/user/42/gvfs
+	org.hyperic.sigar.SigarProxyCache.invoke(SigarProxyCache.java:218)
+	com.sun.proxy.$Proxy2.getFileSystemUsage(Unknown Source)
+	scouter.agent.counter.task.HostPerf.disk(HostPerf.java:281)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	scouter.agent.counter.CounterExecutingManager$Invocation.process(CounterExecutingManager.java:93)
+	scouter.agent.counter.CounterExecutingManager.run(CounterExecutingManager.java:58)
+20161122 22:32:07 [DISK] disk perf error
+org.hyperic.sigar.SigarPermissionDeniedException: Permission denied: /run/user/42/gvfs
+	org.hyperic.sigar.SigarProxyCache.invoke(SigarProxyCache.java:218)
+	com.sun.proxy.$Proxy2.getFileSystemUsage(Unknown Source)
+	scouter.agent.counter.task.HostPerf.disk(HostPerf.java:281)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	scouter.agent.counter.CounterExecutingManager$Invocation.process(CounterExecutingManager.java:93)
+	scouter.agent.counter.CounterExecutingManager.run(CounterExecutingManager.java:58)
+20161122 23:12:10 [A143] SigarException trying to stat network device macvtap0
+org.hyperic.sigar.SigarException: No such device or address: macvtap0
+	org.hyperic.sigar.SigarProxyCache.invoke(SigarProxyCache.java:220)
+	com.sun.proxy.$Proxy2.getNetInterfaceStat(Unknown Source)
+	scouter.agent.counter.task.HostNetDiskPerf.netUsage(HostNetDiskPerf.java:105)
+	scouter.agent.counter.task.HostNetDiskPerf.process(HostNetDiskPerf.java:80)
+	sun.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	scouter.agent.counter.CounterExecutingManager$Invocation.process(CounterExecutingManager.java:93)
+	scouter.agent.counter.CounterExecutingManager.run(CounterExecutingManager.java:58)
+20161122 23:17:10 [A143] SigarException trying to stat network device macvtap0
+org.hyperic.sigar.SigarException: No such device or address: macvtap0
+	org.hyperic.sigar.SigarProxyCache.invoke(SigarProxyCache.java:220)
+	com.sun.proxy.$Proxy2.getNetInterfaceStat(Unknown Source)
+	scouter.agent.counter.task.HostNetDiskPerf.netUsage(HostNetDiskPerf.java:105)
+	scouter.agent.counter.task.HostNetDiskPerf.process(HostNetDiskPerf.java:80)
+	sun.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	scouter.agent.counter.CounterExecutingManager$Invocation.process(CounterExecutingManager.java:93)
+	scouter.agent.counter.CounterExecutingManager.run(CounterExecutingManager.java:58)
+20161122 23:22:11 [A143] SigarException trying to stat network device macvtap0
+org.hyperic.sigar.SigarException: No such device or address: macvtap0
+	org.hyperic.sigar.SigarProxyCache.invoke(SigarProxyCache.java:220)
+	com.sun.proxy.$Proxy2.getNetInterfaceStat(Unknown Source)
+	scouter.agent.counter.task.HostNetDiskPerf.netUsage(HostNetDiskPerf.java:105)
+	scouter.agent.counter.task.HostNetDiskPerf.process(HostNetDiskPerf.java:80)
+	sun.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	scouter.agent.counter.CounterExecutingManager$Invocation.process(CounterExecutingManager.java:93)
+	scouter.agent.counter.CounterExecutingManager.run(CounterExecutingManager.java:58)
+20161122 23:27:11 [A143] SigarException trying to stat network device macvtap0
+org.hyperic.sigar.SigarException: No such device or address: macvtap0
+	org.hyperic.sigar.SigarProxyCache.invoke(SigarProxyCache.java:220)
+	com.sun.proxy.$Proxy2.getNetInterfaceStat(Unknown Source)
+	scouter.agent.counter.task.HostNetDiskPerf.netUsage(HostNetDiskPerf.java:105)
+	scouter.agent.counter.task.HostNetDiskPerf.process(HostNetDiskPerf.java:80)
+	sun.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	scouter.agent.counter.CounterExecutingManager$Invocation.process(CounterExecutingManager.java:93)
+	scouter.agent.counter.CounterExecutingManager.run(CounterExecutingManager.java:58)
+20161122 23:32:08 [DISK] disk perf error
+org.hyperic.sigar.SigarPermissionDeniedException: Permission denied: /run/user/42/gvfs
+	org.hyperic.sigar.SigarProxyCache.invoke(SigarProxyCache.java:218)
+	com.sun.proxy.$Proxy2.getFileSystemUsage(Unknown Source)
+	scouter.agent.counter.task.HostPerf.disk(HostPerf.java:281)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	scouter.agent.counter.CounterExecutingManager$Invocation.process(CounterExecutingManager.java:93)
+	scouter.agent.counter.CounterExecutingManager.run(CounterExecutingManager.java:58)
+20161122 23:32:12 [A143] SigarException trying to stat network device macvtap0
+org.hyperic.sigar.SigarException: No such device or address: macvtap0
+	org.hyperic.sigar.SigarProxyCache.invoke(SigarProxyCache.java:220)
+	com.sun.proxy.$Proxy2.getNetInterfaceStat(Unknown Source)
+	scouter.agent.counter.task.HostNetDiskPerf.netUsage(HostNetDiskPerf.java:105)
+	scouter.agent.counter.task.HostNetDiskPerf.process(HostNetDiskPerf.java:80)
+	sun.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	scouter.agent.counter.CounterExecutingManager$Invocation.process(CounterExecutingManager.java:93)
+	scouter.agent.counter.CounterExecutingManager.run(CounterExecutingManager.java:58)
+20161122 23:37:12 [A143] SigarException trying to stat network device macvtap0
+org.hyperic.sigar.SigarException: No such device or address: macvtap0
+	org.hyperic.sigar.SigarProxyCache.invoke(SigarProxyCache.java:220)
+	com.sun.proxy.$Proxy2.getNetInterfaceStat(Unknown Source)
+	scouter.agent.counter.task.HostNetDiskPerf.netUsage(HostNetDiskPerf.java:105)
+	scouter.agent.counter.task.HostNetDiskPerf.process(HostNetDiskPerf.java:80)
+	sun.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	scouter.agent.counter.CounterExecutingManager$Invocation.process(CounterExecutingManager.java:93)
+	scouter.agent.counter.CounterExecutingManager.run(CounterExecutingManager.java:58)
+20161122 23:42:13 [A143] SigarException trying to stat network device macvtap0
+org.hyperic.sigar.SigarException: No such device or address: macvtap0
+	org.hyperic.sigar.SigarProxyCache.invoke(SigarProxyCache.java:220)
+	com.sun.proxy.$Proxy2.getNetInterfaceStat(Unknown Source)
+	scouter.agent.counter.task.HostNetDiskPerf.netUsage(HostNetDiskPerf.java:105)
+	scouter.agent.counter.task.HostNetDiskPerf.process(HostNetDiskPerf.java:80)
+	sun.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	scouter.agent.counter.CounterExecutingManager$Invocation.process(CounterExecutingManager.java:93)
+	scouter.agent.counter.CounterExecutingManager.run(CounterExecutingManager.java:58)
+20161122 23:47:13 [A143] SigarException trying to stat network device macvtap0
+org.hyperic.sigar.SigarException: No such device or address: macvtap0
+	org.hyperic.sigar.SigarProxyCache.invoke(SigarProxyCache.java:220)
+	com.sun.proxy.$Proxy2.getNetInterfaceStat(Unknown Source)
+	scouter.agent.counter.task.HostNetDiskPerf.netUsage(HostNetDiskPerf.java:105)
+	scouter.agent.counter.task.HostNetDiskPerf.process(HostNetDiskPerf.java:80)
+	sun.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	scouter.agent.counter.CounterExecutingManager$Invocation.process(CounterExecutingManager.java:93)
+	scouter.agent.counter.CounterExecutingManager.run(CounterExecutingManager.java:58)
+20161122 23:52:14 [A143] SigarException trying to stat network device macvtap0
+org.hyperic.sigar.SigarException: No such device or address: macvtap0
+	org.hyperic.sigar.SigarProxyCache.invoke(SigarProxyCache.java:220)
+	com.sun.proxy.$Proxy2.getNetInterfaceStat(Unknown Source)
+	scouter.agent.counter.task.HostNetDiskPerf.netUsage(HostNetDiskPerf.java:105)
+	scouter.agent.counter.task.HostNetDiskPerf.process(HostNetDiskPerf.java:80)
+	sun.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	scouter.agent.counter.CounterExecutingManager$Invocation.process(CounterExecutingManager.java:93)
+	scouter.agent.counter.CounterExecutingManager.run(CounterExecutingManager.java:58)
+20161122 23:57:14 [A143] SigarException trying to stat network device macvtap0
+org.hyperic.sigar.SigarException: No such device or address: macvtap0
+	org.hyperic.sigar.SigarProxyCache.invoke(SigarProxyCache.java:220)
+	com.sun.proxy.$Proxy2.getNetInterfaceStat(Unknown Source)
+	scouter.agent.counter.task.HostNetDiskPerf.netUsage(HostNetDiskPerf.java:105)
+	scouter.agent.counter.task.HostNetDiskPerf.process(HostNetDiskPerf.java:80)
+	sun.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	scouter.agent.counter.CounterExecutingManager$Invocation.process(CounterExecutingManager.java:93)
+	scouter.agent.counter.CounterExecutingManager.run(CounterExecutingManager.java:58)

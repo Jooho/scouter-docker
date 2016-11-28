@@ -1,0 +1,21 @@
+apiVersion: extensions/v1beta1
+kind: DaemonSet
+metadata:
+  name: scouter-host
+spec:
+  selector:
+      matchLabels:
+        name: scouter-host-daemonset 
+  template:
+    metadata:
+      labels:
+        name: scouter-host-daemonset 
+    spec:
+      containers:
+      - image: ljhiyh/scouter-host:v2.2
+        imagePullPolicy: Always
+        name: scouter-host-agent
+        resources: {}
+        terminationMessagePath: /dev/termination-log
+      serviceAccount: default
+      terminationGracePeriodSeconds: 10
