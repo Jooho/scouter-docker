@@ -9,14 +9,11 @@
 hs_err_pid*
 
 #scouter packages
-agent.batch/
-agent.host/
-scouter-agent.java/
 scouter-server/server
 scouter-server/server.old
 scouter-tomcat-openshift-s2i/scouter
 scouter-tomcat-openshift-s2i/scouter.old
 scouter-host-agent/agent.host
 scouter-host-agent/agent.host.old
-
+scouter-test-app/apache-tomcat-7.0.67/webapps/jpetstore/*
 
