@@ -54,10 +54,15 @@ Deploy Test Application (JpetStore)
 
 **Using Default Configuration**
 ```
-docker run -it --link scouter-server -e OBJ_NAME=scouter-jpetstore ljhiyh/scouter-test-app
+docker run -it --link scouter-server -p 8080:8080 -e OBJ_NAME=scouter-jpetstore ljhiyh/scouter-test-app
 ```
 
 **Using Custome Configuration**
 ```
 docker run -it --link scouter-server -e OBJ_NAME=scouter-jpetstore -e HOOK_METHOD_PATTERNS=org -e NET_COLLECTOR_IP=172.0.0.1 -e NET_COLLECTOR_UDP_PORT=6102 -e NET_COLLECTOR_TCP_PORT=6101 ljhiyh/scouter-test-app
 ```
+**Test URL**
+```
+http://localhost:8080/jpetstore
+```
+
