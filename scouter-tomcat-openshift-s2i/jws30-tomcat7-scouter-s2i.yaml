@@ -130,9 +130,9 @@ objects:
           - name: NET_COLLECTOR_TCP_PORT
             value: ${NET_COLLECTOR_TCP_PORT}
           - name: OBJ_NAME
-            value: ${HOSTNAME}
+            value: ${OBJ_NAME}
           - name: HOOK_METHOD_PATTERNS
-            value: HOOK_METHOD_PATTERNS
+            value: ${HOOK_METHOD_PATTERNS}
           image: ${APPLICATION_NAME}
           imagePullPolicy: Always
           name: ${APPLICATION_NAME}
@@ -225,7 +225,6 @@ parameters:
 - description: Scouter OBJ Name
   displayName: Scouter Instance Name
   name: OBJ_NAME
-  value: "${PROJECT_NAME}-${APPLICATION_NAME}"
 - description: Scouter Hook Method Pattern
   displayName: Scouter Hook Method Pattern
   name: HOOK_METHOD_PATTERNS
