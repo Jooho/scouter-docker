@@ -12,5 +12,6 @@ agent.batch/
 agent.host/
 agent.java/
 server/
+logs/
 
 scouter-test-app/
