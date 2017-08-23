@@ -228,4 +228,4 @@ parameters:
 - description: Scouter Hook Method Pattern
   displayName: Scouter Hook Method Pattern
   name: HOOK_METHOD_PATTERNS
-  value: "org.mybatis.jpetstore.*.*"
+  value: 'org.mybatis.jpetstore.*.*'

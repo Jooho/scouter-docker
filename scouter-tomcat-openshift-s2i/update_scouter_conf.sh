@@ -1,5 +1,4 @@
 JWS_HOME=${JWS_HOME:-/opt/webserver}
-HOSTNAME=${HOSTNAME:-scouter_tomcat}
 
 trace_interservice_enabled=true
 obj_name=${OBJ_NAME:-$HOSTNAME}
