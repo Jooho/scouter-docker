@@ -1,0 +1,11 @@
+SCOUTER_ENABLED=${SCOUTER_ENABLED:-True}
+###### SCOUTER OPTIONS ####################################################################
+if [[ ! $SCOUTER_ENABLED =~ False|false|FALSE|no|No|NO ]]; then
+  echo "Scouter Enabled...."
+  export JAVA_OPTS="$JAVA_OPTS -javaagent:$CATALINA_HOME/scouter/agent.java/scouter.agent.jar"
+  export JAVA_OPTS="$JAVA_OPTS -Dscouter.config=$CATALINA_HOME/scouter/conf/scouter_tomcat.conf"
+fi
+
+###############################################################################################
+
+${CATALINA_BASE}/bin/update_scouter_conf.sh

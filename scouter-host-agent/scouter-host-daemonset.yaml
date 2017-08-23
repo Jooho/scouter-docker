@@ -1,0 +1,47 @@
+apiVersion: v1
+kind: Template
+metadata:
+  creationTimestamp: null
+  name: scouter-host-agent
+objects:
+- apiVersion: extensions/v1beta1
+  kind: DaemonSet
+  metadata:
+    name: scouter-host
+  spec:
+    selector:
+        matchLabels:
+          name: scouter-host-daemonset 
+          app: ${APP_NAME}
+    template:
+      metadata:
+        labels:
+          name: scouter-host-daemonset 
+          app: ${APP_NAME}
+      spec:
+        containers:
+        - env:
+          - name: NET_COLLECTOR_IP
+            value: ${NET_COLLECTOR_IP}
+          - name: NET_COLLECTOR_UDP_PORT 
+            value: ${NET_COLLECTOR_UDP_PORT}
+          image: ljhiyh/scouter-host-agent:latest
+          imagePullPolicy: Always
+          name: scouter-host-agent
+          resources: {}
+          terminationMessagePath: /dev/termination-log
+        serviceAccount: default
+        terminationGracePeriodSeconds: 10
+parameters:
+- description: The name assigned to the application.
+  displayName: Application Name
+  name: APP_NAME
+  value: scouter-host-agent
+- description: Scouter Server Service IP
+  displayName: Scouter Server Service IP
+  name: NET_COLLECTOR_IP
+- description: Scouter UDP Listen Port to be accssible from client
+  displayName: Scouter UDP Port
+  name: NET_COLLECTOR_UDP_PORT
+  value: "6101"
+

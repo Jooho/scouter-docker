@@ -1,0 +1,232 @@
+apiVersion: v1
+kind: Template
+labels:
+  template: jws30-tomcat7-scouter-s2i
+  xpaas: 1.2.0
+metadata:
+  annotations:
+    description: Application template for JWS applications built with scouter using S2I.
+    iconClass: icon-tomcat
+    tags: tomcat,tomcat7,java,jboss,xpaas
+    version: 1.2.0
+  name: jws30-tomcat7-scouter-s2i
+objects:
+- apiVersion: v1
+  kind: ImageStream
+  metadata:
+    labels:
+      application: ${APPLICATION_NAME}
+    name: webserver30-tomcat7-openshift
+  spec:
+    tags:
+    - annotations:
+      openshift.io/imported-from: ljhiyh/webserver30-tomcat7-openshift:latest
+      from:
+        kind: DockerImage
+        name: docker.io/ljhiyh/webserver30-tomcat7-openshift:latest
+      generation: 2
+      importPolicy: {}
+      name: latest
+      referencePolicy:
+        type: Source
+- apiVersion: v1
+  kind: Service
+  metadata:
+    annotations:
+      description: The web server's http port.
+    labels:
+      application: ${APPLICATION_NAME}
+    name: ${APPLICATION_NAME}
+  spec:
+    ports:
+    - port: 8080
+      targetPort: 8080
+    selector:
+      deploymentConfig: ${APPLICATION_NAME}
+- apiVersion: v1
+  id: ${APPLICATION_NAME}-http
+  kind: Route
+  metadata:
+    annotations:
+      description: Route for application's http service.
+    labels:
+      application: ${APPLICATION_NAME}
+    name: ${APPLICATION_NAME}
+  spec:
+    host: ${HOSTNAME_HTTP}
+    to:
+      name: ${APPLICATION_NAME}
+- apiVersion: v1
+  kind: ImageStream
+  metadata:
+    labels:
+      application: ${APPLICATION_NAME}
+    name: ${APPLICATION_NAME}
+- apiVersion: v1
+  kind: BuildConfig
+  metadata:
+    labels:
+      application: ${APPLICATION_NAME}
+    name: ${APPLICATION_NAME}
+  spec:
+    output:
+      to:
+        kind: ImageStreamTag
+        name: ${APPLICATION_NAME}:latest
+    source:
+      contextDir: ${CONTEXT_DIR}
+      git:
+        ref: ${SOURCE_REPOSITORY_REF}
+        uri: ${SOURCE_REPOSITORY_URL}
+      type: Git
+    strategy:
+      sourceStrategy:
+        forcePull: true
+        from:
+          kind: ImageStreamTag
+          name: webserver30-tomcat7-openshift:latest
+      type: Source
+    triggers:
+    - github:
+        secret: ${GITHUB_WEBHOOK_SECRET}
+      type: GitHub
+    - generic:
+        secret: ${GENERIC_WEBHOOK_SECRET}
+      type: Generic
+    - imageChange: {}
+      type: ImageChange
+    - type: ConfigChange
+- apiVersion: v1
+  kind: DeploymentConfig
+  metadata:
+    labels:
+      application: ${APPLICATION_NAME}
+    name: ${APPLICATION_NAME}
+  spec:
+    replicas: 1
+    selector:
+      deploymentConfig: ${APPLICATION_NAME}
+    strategy:
+      type: Rolling
+    template:
+      metadata:
+        labels:
+          application: ${APPLICATION_NAME}
+          deploymentConfig: ${APPLICATION_NAME}
+        name: ${APPLICATION_NAME}
+      spec:
+        containers:
+        - env:
+          - name: JWS_ADMIN_USERNAME
+            value: ${JWS_ADMIN_USERNAME}
+          - name: JWS_ADMIN_PASSWORD
+            value: ${JWS_ADMIN_PASSWORD}
+          - name: SCOUTER_ENABLED
+            value: ${SCOUTER_ENABLED}
+          - name: NET_COLLECTOR_IP
+            value: ${NET_COLLECTOR_IP}
+          - name: NET_COLLECTOR_UDP_PORT
+            value: ${NET_COLLECTOR_UDP_PORT}
+          - name: NET_COLLECTOR_TCP_PORT
+            value: ${NET_COLLECTOR_TCP_PORT}
+          - name: OBJ_NAME
+            value: ${HOSTNAME}
+          - name: HOOK_METHOD_PATTERNS
+            value: HOOK_METHOD_PATTERNS
+          image: ${APPLICATION_NAME}
+          imagePullPolicy: Always
+          name: ${APPLICATION_NAME}
+          ports:
+          - containerPort: 8778
+            name: jolokia
+            protocol: TCP
+          - containerPort: 8080
+            name: http
+            protocol: TCP
+          readinessProbe:
+            exec:
+              command:
+              - /bin/bash
+              - -c
+              - curl -s -u ${JWS_ADMIN_USERNAME}:${JWS_ADMIN_PASSWORD} 'http://localhost:8080/manager/jmxproxy/?get=Catalina%3Atype%3DServer&att=stateName'
+                |grep -iq 'stateName *= *STARTED'
+        terminationGracePeriodSeconds: 60
+    triggers:
+    - imageChangeParams:
+        automatic: true
+        containerNames:
+        - ${APPLICATION_NAME}
+        from:
+          kind: ImageStreamTag
+          name: ${APPLICATION_NAME}:latest
+      type: ImageChange
+    - type: ConfigChange
+parameters:
+- description: The name for the application.
+  name: APPLICATION_NAME
+  required: true
+  value: jws-app
+- description: 'Custom hostname for http service route.  Leave blank for default hostname,
+    e.g.: <application-name>-<project>.<default-domain-suffix>'
+  name: HOSTNAME_HTTP
+- description: Git source URI for application
+  name: SOURCE_REPOSITORY_URL
+  required: true
+  value: https://github.com/jboss-openshift/openshift-quickstarts.git
+- description: Git branch/tag reference
+  name: SOURCE_REPOSITORY_REF
+  value: "1.2"
+- description: Path within Git project to build; empty for root project directory.
+  name: CONTEXT_DIR
+  value: tomcat-websocket-chat
+- description: JWS Admin User
+  from: '[a-zA-Z0-9]{8}'
+  generate: expression
+  name: JWS_ADMIN_USERNAME
+  required: true
+- description: JWS Admin Password
+  from: '[a-zA-Z0-9]{8}'
+  generate: expression
+  name: JWS_ADMIN_PASSWORD
+  required: true
+- description: GitHub trigger secret
+  from: '[a-zA-Z0-9]{8}'
+  generate: expression
+  name: GITHUB_WEBHOOK_SECRET
+  required: true
+- description: Generic build trigger secret
+  from: '[a-zA-Z0-9]{8}'
+  generate: expression
+  name: GENERIC_WEBHOOK_SECRET
+  required: true
+- description: Namespace in which the ImageStreams for Red Hat Middleware images are
+    installed. These ImageStreams are normally installed in the openshift namespace.
+    You should only need to modify this if you've installed the ImageStreams in a
+    different namespace/project.
+  name: IMAGE_STREAM_NAMESPACE
+  required: true
+  value: openshift
+- description: Scouter Enabled
+  displayName: Scouter Enabled
+  name: SCOUTER_ENABLED
+  value: "True"
+- description: Scouter Server IP 
+  displayName: Scouter Server IP
+  name: NET_COLLECTOR_IP
+  required: True
+- description: Scouter UDP Listen Port to be accssible from client
+  displayName: Scouter UDP Port
+  name: NET_COLLECTOR_UDP_PORT
+  value: "6101"
+- description: Scouter TCP Listen Port to be accssible from client
+  displayName: Scouter TCP Port
+  name: NET_COLLECTOR_TCP_PORT
+  value: "6100"
+- description: Scouter OBJ Name
+  displayName: Scouter Instance Name
+  name: OBJ_NAME
+  value: "${PROJECT_NAME}-${APPLICATION_NAME}"
+- description: Scouter Hook Method Pattern
+  displayName: Scouter Hook Method Pattern
+  name: HOOK_METHOD_PATTERNS
+  value: "org.mybatis.jpetstore.*.*"
