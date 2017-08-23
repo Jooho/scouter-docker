@@ -1,4 +1,5 @@
 *.class
+*.swp
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
@@ -10,8 +11,12 @@ hs_err_pid*
 #scouter packages
 agent.batch/
 agent.host/
-agent.java/
-server/
-logs/
+scouter-agent.java/
+scouter-server/server
+scouter-server/server.old
+scouter-tomcat-openshift-s2i/scouter
+scouter-tomcat-openshift-s2i/scouter.old
+scouter-host-agent/agent.host
+scouter-host-agent/agent.host.old
 
-scouter-test-app/
+

@@ -1,0 +1,65 @@
+<html>
+<head>
+    <title>Scouter End User Error Test Page</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script>
+        Scouter = {
+            endPoint: '/jpetstore/_scouter_browser.jsp'
+        };
+    </script>
+    <!--<script type="text/javascript" src="../scouter/scouter-script-error.js"></script>-->
+    <script type="text/javascript" src="http://localhost:9999/scouter.enduser.script/script/src/error/scouter-script-error.js"></script>
+
+    <script type="text/javascript">
+        function invokeUndefinedError1() {
+
+            var x = document.getElementById("demo").value;
+        }
+
+        function invokeUndefinedError2() {
+            somethingNotDefined();
+        }
+
+        function invokeThrowError() {
+            throw "my error message";
+        }
+
+        function invokeCrossOrginIframe() {
+            var doc = document.ifm_google.contentWindow.document;
+        }
+
+        function invokeEvalError() {
+            var sum = eval('function test(( { return 1 + 1; }');
+            alert("NO ERROR CAUGHT: Your browser doesn't seem to mind that we just set eval to the letter 'x'!");
+        }
+
+        function invokeRefError() {
+            var sum = x + y;
+            alert(sum);
+        }
+    </script>
+</head>
+
+<body>
+
+
+<input type="button" onclick="invokeUndefinedError1()"
+       value="invokeUndefinedError1"/>
+<br/>
+<input type="button" onclick="invokeUndefinedError2()"
+       value="invokeUndefinedError2"/>
+<br/>
+<input type="button" onclick="invokeThrowError()"
+       value="invokeThrowError"/>
+<br/>
+<input type="button" onclick="invokeCrossOrginIframe()"
+       value="invokeCrossOrginIframe"/>
+<br/>
+<input type="button" onclick="invokeEvalError()"
+       value="invokeEvalError"/>
+<br/>
+<input type="button" onclick="invokeRefError()" value="invokeRefError"/>
+<br/>
+
+</body>
+</html>

@@ -1,0 +1,135 @@
+  ____                  _            
+ / ___|  ___ ___  _   _| |_ ___ _ __ 
+ \___ \ / __/   \| | | | __/ _ \ '__|
+  ___) | (_| (+) | |_| | ||  __/ |   
+ |____/ \___\___/ \__,_|\__\___|_|                                      
+ Open Source S/W Performance Monitoring  
+ Scouter version 0.4.22 20161117
+ 
+20170822 12:45:14 [SCOUTER] loaded by system classloader 
+20170822 12:45:14 [SCOUTER] Version 0.4.22 20161117
+20170822 12:45:14 [SCOUTER] jar:file:/home/jooho/RHB/dev/git/mine/scouter-docker/scouter-test-app/scouter/agent.java/scouter.agent.jar
+20170822 12:45:15 [SCOUTER] objType:tomcat
+20170822 12:45:15 [SCOUTER] objName:/jhouse.workstation.com/tomcat1
+20170822 12:45:15 [A113] Counter Collector Started (#17)
+20170822 12:45:15 [SCOUTER] Configure -Dscouter.config=/home/jooho/RHB/dev/git/mine/scouter-docker/scouter-test-app/apache-tomcat-7.0.67/../conf/scouter_tomcat.conf
+20170822 12:45:15 [A100] agent boot seed=x17qk5gop42
+Aug 22, 2017 1:45:15 PM org.apache.catalina.startup.Catalina initDirs
+SEVERE: Cannot find specified temporary folder at /home/jooho/RHB/dev/git/mine/scouter-docker/scouter-test-app/apache-tomcat-7.0.67/temp
+20170822 12:45:16 [A119] Agent UDP local.port=0
+Aug 22, 2017 1:45:16 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server version:        Apache Tomcat/7.0.67
+Aug 22, 2017 1:45:16 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server built:          Dec 7 2015 13:07:11 UTC
+Aug 22, 2017 1:45:16 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server number:         7.0.67.0
+Aug 22, 2017 1:45:16 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Name:               Linux
+Aug 22, 2017 1:45:16 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Version:            4.11.5-200.fc25.x86_64
+Aug 22, 2017 1:45:16 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Architecture:          amd64
+Aug 22, 2017 1:45:16 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Java Home:             /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.141-1.b16.fc25.x86_64/jre
+Aug 22, 2017 1:45:16 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Version:           1.8.0_141-b16
+Aug 22, 2017 1:45:16 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Vendor:            Oracle Corporation
+Aug 22, 2017 1:45:16 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_BASE:         /home/jooho/RHB/dev/git/mine/scouter-docker/scouter-test-app/apache-tomcat-7.0.67
+Aug 22, 2017 1:45:16 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_HOME:         /home/jooho/RHB/dev/git/mine/scouter-docker/scouter-test-app/apache-tomcat-7.0.67
+Aug 22, 2017 1:45:16 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.config.file=/home/jooho/RHB/dev/git/mine/scouter-docker/scouter-test-app/apache-tomcat-7.0.67/conf/logging.properties
+Aug 22, 2017 1:45:16 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+Aug 22, 2017 1:45:16 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -javaagent:/home/jooho/RHB/dev/git/mine/scouter-docker/scouter-test-app/apache-tomcat-7.0.67/../scouter/agent.java/scouter.agent.jar
+Aug 22, 2017 1:45:16 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dscouter.config=/home/jooho/RHB/dev/git/mine/scouter-docker/scouter-test-app/apache-tomcat-7.0.67/../conf/scouter_tomcat.conf
+Aug 22, 2017 1:45:16 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.endorsed.dirs=/home/jooho/RHB/dev/git/mine/scouter-docker/scouter-test-app/apache-tomcat-7.0.67/endorsed
+Aug 22, 2017 1:45:16 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.base=/home/jooho/RHB/dev/git/mine/scouter-docker/scouter-test-app/apache-tomcat-7.0.67
+Aug 22, 2017 1:45:16 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.home=/home/jooho/RHB/dev/git/mine/scouter-docker/scouter-test-app/apache-tomcat-7.0.67
+Aug 22, 2017 1:45:16 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.io.tmpdir=/home/jooho/RHB/dev/git/mine/scouter-docker/scouter-test-app/apache-tomcat-7.0.67/temp
+Aug 22, 2017 1:45:16 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+Aug 22, 2017 1:45:16 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Aug 22, 2017 1:45:16 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Aug 22, 2017 1:45:16 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1669 ms
+Aug 22, 2017 1:45:16 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Aug 22, 2017 1:45:16 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.67
+Aug 22, 2017 1:45:16 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/jooho/RHB/dev/git/mine/scouter-docker/scouter-test-app/apache-tomcat-7.0.67/webapps/jpetstore
+20170822 12:45:19 [A104] FILTER net/sourceforge/stripes/controller/StripesFilter
+20170822 12:45:19 [A103] HTTP javax/servlet/http/HttpServlet
+Aug 22, 2017 1:45:20 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+20170822 12:45:20 [A104] FILTER org/apache/tomcat/websocket/server/WsFilter
+0 [localhost-startStop-1] TRACE org.mybatis.spring.mapper.ClassPathMapperScanner  - Scanning file [/home/jooho/RHB/dev/git/mine/scouter-docker/scouter-test-app/apache-tomcat-7.0.67/webapps/jpetstore/WEB-INF/classes/org/mybatis/jpetstore/persistence/SequenceMapper.class]
+2 [localhost-startStop-1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner  - Identified candidate component class: file [/home/jooho/RHB/dev/git/mine/scouter-docker/scouter-test-app/apache-tomcat-7.0.67/webapps/jpetstore/WEB-INF/classes/org/mybatis/jpetstore/persistence/SequenceMapper.class]
+2 [localhost-startStop-1] TRACE org.mybatis.spring.mapper.ClassPathMapperScanner  - Scanning file [/home/jooho/RHB/dev/git/mine/scouter-docker/scouter-test-app/apache-tomcat-7.0.67/webapps/jpetstore/WEB-INF/classes/org/mybatis/jpetstore/persistence/AccountMapper.class]
+2 [localhost-startStop-1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner  - Identified candidate component class: file [/home/jooho/RHB/dev/git/mine/scouter-docker/scouter-test-app/apache-tomcat-7.0.67/webapps/jpetstore/WEB-INF/classes/org/mybatis/jpetstore/persistence/AccountMapper.class]
+2 [localhost-startStop-1] TRACE org.mybatis.spring.mapper.ClassPathMapperScanner  - Scanning file [/home/jooho/RHB/dev/git/mine/scouter-docker/scouter-test-app/apache-tomcat-7.0.67/webapps/jpetstore/WEB-INF/classes/org/mybatis/jpetstore/persistence/LineItemMapper.class]
+2 [localhost-startStop-1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner  - Identified candidate component class: file [/home/jooho/RHB/dev/git/mine/scouter-docker/scouter-test-app/apache-tomcat-7.0.67/webapps/jpetstore/WEB-INF/classes/org/mybatis/jpetstore/persistence/LineItemMapper.class]
+2 [localhost-startStop-1] TRACE org.mybatis.spring.mapper.ClassPathMapperScanner  - Scanning file [/home/jooho/RHB/dev/git/mine/scouter-docker/scouter-test-app/apache-tomcat-7.0.67/webapps/jpetstore/WEB-INF/classes/org/mybatis/jpetstore/persistence/ProductMapper.class]
+2 [localhost-startStop-1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner  - Identified candidate component class: file [/home/jooho/RHB/dev/git/mine/scouter-docker/scouter-test-app/apache-tomcat-7.0.67/webapps/jpetstore/WEB-INF/classes/org/mybatis/jpetstore/persistence/ProductMapper.class]
+3 [localhost-startStop-1] TRACE org.mybatis.spring.mapper.ClassPathMapperScanner  - Scanning file [/home/jooho/RHB/dev/git/mine/scouter-docker/scouter-test-app/apache-tomcat-7.0.67/webapps/jpetstore/WEB-INF/classes/org/mybatis/jpetstore/persistence/CategoryMapper.class]
+3 [localhost-startStop-1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner  - Identified candidate component class: file [/home/jooho/RHB/dev/git/mine/scouter-docker/scouter-test-app/apache-tomcat-7.0.67/webapps/jpetstore/WEB-INF/classes/org/mybatis/jpetstore/persistence/CategoryMapper.class]
+3 [localhost-startStop-1] TRACE org.mybatis.spring.mapper.ClassPathMapperScanner  - Scanning file [/home/jooho/RHB/dev/git/mine/scouter-docker/scouter-test-app/apache-tomcat-7.0.67/webapps/jpetstore/WEB-INF/classes/org/mybatis/jpetstore/persistence/OrderMapper.class]
+3 [localhost-startStop-1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner  - Identified candidate component class: file [/home/jooho/RHB/dev/git/mine/scouter-docker/scouter-test-app/apache-tomcat-7.0.67/webapps/jpetstore/WEB-INF/classes/org/mybatis/jpetstore/persistence/OrderMapper.class]
+3 [localhost-startStop-1] TRACE org.mybatis.spring.mapper.ClassPathMapperScanner  - Scanning file [/home/jooho/RHB/dev/git/mine/scouter-docker/scouter-test-app/apache-tomcat-7.0.67/webapps/jpetstore/WEB-INF/classes/org/mybatis/jpetstore/persistence/ItemMapper.class]
+3 [localhost-startStop-1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner  - Identified candidate component class: file [/home/jooho/RHB/dev/git/mine/scouter-docker/scouter-test-app/apache-tomcat-7.0.67/webapps/jpetstore/WEB-INF/classes/org/mybatis/jpetstore/persistence/ItemMapper.class]
+4 [localhost-startStop-1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner  - Creating MapperFactoryBean with name 'sequenceMapper' and 'org.mybatis.jpetstore.persistence.SequenceMapper' mapperInterface
+4 [localhost-startStop-1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner  - Enabling autowire by type for MapperFactoryBean with name 'sequenceMapper'.
+4 [localhost-startStop-1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner  - Creating MapperFactoryBean with name 'accountMapper' and 'org.mybatis.jpetstore.persistence.AccountMapper' mapperInterface
+4 [localhost-startStop-1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner  - Enabling autowire by type for MapperFactoryBean with name 'accountMapper'.
+4 [localhost-startStop-1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner  - Creating MapperFactoryBean with name 'lineItemMapper' and 'org.mybatis.jpetstore.persistence.LineItemMapper' mapperInterface
+4 [localhost-startStop-1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner  - Enabling autowire by type for MapperFactoryBean with name 'lineItemMapper'.
+4 [localhost-startStop-1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner  - Creating MapperFactoryBean with name 'productMapper' and 'org.mybatis.jpetstore.persistence.ProductMapper' mapperInterface
+4 [localhost-startStop-1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner  - Enabling autowire by type for MapperFactoryBean with name 'productMapper'.
+4 [localhost-startStop-1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner  - Creating MapperFactoryBean with name 'categoryMapper' and 'org.mybatis.jpetstore.persistence.CategoryMapper' mapperInterface
+4 [localhost-startStop-1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner  - Enabling autowire by type for MapperFactoryBean with name 'categoryMapper'.
+4 [localhost-startStop-1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner  - Creating MapperFactoryBean with name 'orderMapper' and 'org.mybatis.jpetstore.persistence.OrderMapper' mapperInterface
+4 [localhost-startStop-1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner  - Enabling autowire by type for MapperFactoryBean with name 'orderMapper'.
+4 [localhost-startStop-1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner  - Creating MapperFactoryBean with name 'itemMapper' and 'org.mybatis.jpetstore.persistence.ItemMapper' mapperInterface
+5 [localhost-startStop-1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner  - Enabling autowire by type for MapperFactoryBean with name 'itemMapper'.
+20170822 12:45:22 [A108] jdbc stmt found: org/hsqldb/jdbc/JDBCStatement
+1393 [localhost-startStop-1] DEBUG org.mybatis.spring.SqlSessionFactoryBean  - Property 'configLocation' not specified, using default MyBatis Configuration
+1579 [localhost-startStop-1] DEBUG org.mybatis.spring.SqlSessionFactoryBean  - Scanned package: 'org.mybatis.jpetstore.domain' for aliases
+1581 [localhost-startStop-1] DEBUG org.mybatis.spring.SqlSessionFactoryBean  - Property 'mapperLocations' was not specified or no matching resources found
+2931 [localhost-startStop-1] WARN  net.sourceforge.stripes.controller.multipart.DefaultMultipartWrapperFactory  - No MultipartWrapper implementation could be loaded
+Aug 22, 2017 1:45:24 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/jooho/RHB/dev/git/mine/scouter-docker/scouter-test-app/apache-tomcat-7.0.67/webapps/jpetstore has finished in 8,044 ms
+Aug 22, 2017 1:45:24 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Aug 22, 2017 1:45:25 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+Aug 22, 2017 1:45:25 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 8193 ms
+Aug 22, 2017 1:46:36 PM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Aug 22, 2017 1:46:36 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+Aug 22, 2017 1:46:36 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+Aug 22, 2017 1:46:36 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Aug 22, 2017 1:46:37 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+SEVERE: The web application [/jpetstore] registered the JDBC driver [org.hsqldb.jdbc.JDBCDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 22, 2017 1:46:37 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+Aug 22, 2017 1:46:37 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+Aug 22, 2017 1:46:37 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+Aug 22, 2017 1:46:37 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]

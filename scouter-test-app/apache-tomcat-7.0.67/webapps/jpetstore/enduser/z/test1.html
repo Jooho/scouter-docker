@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        var time = (new Date()).getTime();
+    </script>
+    <title>Test</title>
+    <script>
+        function defaultOnLoad() {
+            var myTime = (new Date()).getTime();
+            console.log("defaultOnLoad=" + (myTime-time));
+        }
+        function anotherOnLoad() {
+            var myTime = (new Date()).getTime();
+            console.log("anotherOnLoad=" + (myTime-time));
+
+            if(window.oldOnLoad) {
+                console.log('Call old onload');
+                window.oldOnLoad();
+            }
+        }
+        function domLoad() {
+            var myTime = (new Date()).getTime();
+            console.log("domLoad=" + (myTime-time));
+        }
+
+        function eventLoad() {
+            var myTime = (new Date()).getTime();
+            console.log("eventLoad=" + (myTime-time));
+        }
+
+        function eventLoad2() {
+            var myTime = (new Date()).getTime();
+            console.log("eventLoad2=" + (myTime-time));
+        }
+
+        console.log(window.onload);
+        if(window.onload) {
+            console.log('On Load exist!');
+            window.oldOnLoad = window.onload;
+        }
+        window.onload = anotherOnLoad;
+        document.addEventListener("load", eventLoad);
+        document.addEventListener("load", eventLoad);
+        window.addEventListener("load", eventLoad);
+        window.addEventListener("load", eventLoad2);
+
+        document.addEventListener("DOMContentLoaded", domLoad);
+    </script>
+</head>
+
+<body onload="defaultOnLoad()">
+Hello<br>
+<img src="http://localhost:8080/z/10sImage.jsp">
+
+</body>
+</html>
