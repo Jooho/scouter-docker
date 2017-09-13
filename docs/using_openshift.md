@@ -2,6 +2,12 @@
 
 The image is built based on official redhat `registry.access.redhat.com/jboss-webserver-3/webserver30-tomcat7-openshift`. Only scouter configuration is injected to tomcat. Apart from that, everything is same.
 
+Scouter project
+---------------
+```
+oc new-project scouter-server
+oadm pod-network make-projects-global scouter-server
+```
 
 Deploy Scouter Server
 --------------------
@@ -12,8 +18,8 @@ Deploy Scouter Server
 - NET_UDP_LISTEN_PORT=6101
 
 **Using Default Configuration**
+
 ```
-oc new-project scouter
 oc process -f ${SCOUTER_HOME}/scouter-server/scouter-server-template.yaml | oc create -f -
 ```
 
