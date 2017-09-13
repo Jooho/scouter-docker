@@ -57,12 +57,12 @@ Deploy Test Application (tomcat-websocket-chat)
 
 **Using Default Configuration**
 ```
-oc process -f ${SCOUTER_HOME}/scouter-tomcat-openshift-s2i/jws30-tomcat7-scouter-s2i -v NET_COLLECTOR_IP=172.30.210.42 -v "HOOK_METHOD_PATTERNS=util.*" -v APPLICATION_NAME=jpetstore |oc create -f -
+oc process -f ${SCOUTER_HOME}/scouter-tomcat-openshift-s2i/jws30-tomcat7-scouter-s2i.yaml -v NET_COLLECTOR_IP=172.30.210.42 -v "HOOK_METHOD_PATTERNS=util.*" -v APPLICATION_NAME=jpetstore |oc create -f -
 ```
 
 **Using Custome Configuration**
 ```
-oc process -f ${SCOUTER_HOME}/scouter-tomcat-openshift-s2i/jws30-tomcat7-scouter-s2i -v SOURCE_REPOSITORY_URL=https://github.com/mybatis/jpetstore-6.git  -v SOURCE_REPOSITORY_REF="" -v CONTEXT_DIR=""  -v NET_COLLECTOR_IP=172.30.210.42 -v APPLICATION_NAME=jpetstore |oc create -f -
+oc process -f ${SCOUTER_HOME}/scouter-tomcat-openshift-s2i/jws30-tomcat7-scouter-s2i.yaml -v SOURCE_REPOSITORY_URL=https://github.com/mybatis/jpetstore-6.git  -v SOURCE_REPOSITORY_REF="" -v CONTEXT_DIR=""  -v NET_COLLECTOR_IP=172.30.210.42 -v APPLICATION_NAME=jpetstore |oc create -f -
 
 ```
 
