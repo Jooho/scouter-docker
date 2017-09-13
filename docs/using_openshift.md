@@ -39,7 +39,7 @@ oc process -f ${SCOUTER_HOME}/scouter-host-agent/scouter-host-daemonset.yaml   |
 
 **Using Custome Configuration**
 ```
-oc process -f ${SCOUTER_HOME}/scouter-host-agent/scouter-host-daemonset.yaml -v NET_COLLECTOR_IP=172.0.0.1 -p NET_COLLECTOR_UDP_PORT=6102 |oc create -f -
+oc process -f ${SCOUTER_HOME}/scouter-host-agent/scouter-host-daemonset.yaml -v NET_COLLECTOR_IP=172.0.0.1 -v NET_COLLECTOR_UDP_PORT=6102 |oc create -f -
 ```
 
 Deploy Test Application (tomcat-websocket-chat)
