@@ -19,7 +19,7 @@ oc process -f ${SCOUTER_HOME}/scouter-server/scouter-server-template.yaml | oc c
 
 **Using Custom Configuration**
 ```
-oc process -f ${SCOUTER_HOME}/scouter-server/scouter-server-template.yaml -p NET_TCP_LISTEN_PORT=6101 -p NET_UDP_LISTEN_PORT=6102| oc create -f -
+oc process -f ${SCOUTER_HOME}/scouter-server/scouter-server-template.yaml -v NET_TCP_LISTEN_PORT=6101 -v NET_UDP_LISTEN_PORT=6102| oc create -f -
 ```
 
 Deploy Scouter Host Agent
@@ -39,7 +39,7 @@ oc process -f ${SCOUTER_HOME}/scouter-host-agent/scouter-host-daemonset.yaml   |
 
 **Using Custome Configuration**
 ```
-oc process -f ${SCOUTER_HOME}/scouter-host-agent/scouter-host-daemonset.yaml -p NET_COLLECTOR_IP=172.0.0.1 -p NET_COLLECTOR_UDP_PORT=6102 |oc create -f -
+oc process -f ${SCOUTER_HOME}/scouter-host-agent/scouter-host-daemonset.yaml -v NET_COLLECTOR_IP=172.0.0.1 -p NET_COLLECTOR_UDP_PORT=6102 |oc create -f -
 ```
 
 Deploy Test Application (tomcat-websocket-chat)
@@ -57,12 +57,12 @@ Deploy Test Application (tomcat-websocket-chat)
 
 **Using Default Configuration**
 ```
-oc process -f ${SCOUTER_HOME}/scouter-tomcat-openshift-s2i/jws30-tomcat7-scouter-s2i -p NET_COLLECTOR_IP=172.30.210.42 -p "HOOK_METHOD_PATTERNS=util.*" -p APPLICATION_NAME=jpetstore |oc create -f -
+oc process -f ${SCOUTER_HOME}/scouter-tomcat-openshift-s2i/jws30-tomcat7-scouter-s2i -v NET_COLLECTOR_IP=172.30.210.42 -v "HOOK_METHOD_PATTERNS=util.*" -v APPLICATION_NAME=jpetstore |oc create -f -
 ```
 
 **Using Custome Configuration**
 ```
-oc process -f ${SCOUTER_HOME}/scouter-tomcat-openshift-s2i/jws30-tomcat7-scouter-s2i -p SOURCE_REPOSITORY_URL=https://github.com/mybatis/jpetstore-6.git  -p SOURCE_REPOSITORY_REF="" -p CONTEXT_DIR=""  -p NET_COLLECTOR_IP=172.30.210.42 -p APPLICATION_NAME=jpetstore |oc create -f -
+oc process -f ${SCOUTER_HOME}/scouter-tomcat-openshift-s2i/jws30-tomcat7-scouter-s2i -v SOURCE_REPOSITORY_URL=https://github.com/mybatis/jpetstore-6.git  -v SOURCE_REPOSITORY_REF="" -v CONTEXT_DIR=""  -v NET_COLLECTOR_IP=172.30.210.42 -v APPLICATION_NAME=jpetstore |oc create -f -
 
 ```
 
